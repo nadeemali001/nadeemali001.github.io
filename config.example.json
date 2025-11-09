@@ -1,0 +1,144 @@
+{
+  "personalInfo": {
+    "name": "Your Name",
+    "title": "Hello! I'm Your Name",
+    "profileImage": "appData/your-profile-image.jpg",
+    "email": "your.email@example.com",
+    "summary": "Your professional summary in one line",
+    "about": "A longer paragraph about yourself, your background, and your passion."
+  },
+  
+  "socialLinks": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/yourprofile",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://www.github.com/yourusername",
+      "icon": "github"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://www.twitter.com/yourusername",
+      "icon": "twitter"
+    }
+  ],
+  
+  "experience": {
+    "sectionTitle": "Experience",
+    "sectionImage": "appData/experience-image.jpg",
+    "items": [
+      {
+        "title": "Job Title",
+        "company": "Company Name",
+        "period": "Jan 2020 - Present",
+        "description": [
+          "First achievement or responsibility",
+          "Second achievement or responsibility",
+          "Third achievement or responsibility"
+        ]
+      }
+    ]
+  },
+  
+  "skills": {
+    "sectionTitle": "Skills",
+    "sectionImage": "appData/skills-image.jpg",
+    "categories": [
+      {
+        "title": "Programming Languages",
+        "icon": "language",
+        "items": "JavaScript, Python, Java, C++"
+      },
+      {
+        "title": "Tools",
+        "icon": "tool",
+        "items": "Git, Docker, Kubernetes, Jenkins"
+      },
+      {
+        "title": "Cloud",
+        "icon": "cloud",
+        "items": "AWS, Azure, GCP"
+      }
+    ]
+  },
+  
+  "projects": {
+    "sectionTitle": "Projects",
+    "items": [
+      {
+        "title": "Project Name",
+        "url": "https://project-url.com",
+        "description": "Description of your project and what it does."
+      },
+      {
+        "title": "Another Project",
+        "url": null,
+        "description": "Project without external link."
+      }
+    ]
+  },
+  
+  "education": {
+    "sectionTitle": "Education",
+    "sectionImage": "appData/education-image.jpg",
+    "items": [
+      {
+        "title": "Bachelor's Degree",
+        "period": "2010 - 2014",
+        "description": "Your education details and achievements."
+      }
+    ]
+  },
+  
+  "resume": {
+    "sectionTitle": "Download Resume",
+    "files": [
+      {
+        "name": "Download Resume (PDF)",
+        "file": "appData/resume.pdf"
+      }
+    ]
+  },
+  
+  "theme": {
+    "colors": {
+      "primary": "#6366f1",
+      "primaryDark": "#4f46e5",
+      "secondary": "#8b5cf6",
+      "accent": "#06b6d4",
+      "textDark": "#1e293b",
+      "textLight": "#64748b",
+      "bgLight": "#f8fafc",
+      "bgWhite": "#ffffff",
+      "borderColor": "#e2e8f0"
+    },
+    "background": {
+      "type": "gradient",
+      "gradient": {
+        "start": "#f5f7fa",
+        "end": "#c3cfe2",
+        "direction": "135deg"
+      }
+    },
+    "fonts": {
+      "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif",
+      "googleFont": "Inter",
+      "googleFontWeights": "400;500;600;700;800"
+    },
+    "effects": {
+      "animations": true,
+      "hoverEffects": true,
+      "smoothScroll": true
+    }
+  },
+  
+  "meta": {
+    "title": "Your Name | Portfolio",
+    "description": "Your professional portfolio description for SEO",
+    "keywords": "your, keywords, here"
+  }
+}
+

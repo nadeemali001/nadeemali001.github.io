@@ -1,0 +1,188 @@
+{
+  "personalInfo": {
+    "name": "Nadeem Ali",
+    "title": "Site Reliability Engineer | DevOps | Cloud Automation",
+    "profileImage": "appData/Nadeem_Ali_2.JPG",
+    "email": "nadeemali001@gmail.com",
+    "summary": "SRE & DevOps Engineer with 10+ years of experience in production reliability, automation, and cloud infrastructure. Skilled in Python, Kubernetes, Airflow, CI/CD, and observability tools with a strong background in trading and large-scale systems.",
+    "about": "As an SRE, I focus on building reliable, scalable, and observable systems that automate everything from deployments to incident recovery. I blend my experience in trading platforms and production support with modern reliability practices — SLIs, SLOs, and error budgets — to create resilient services that delight users and scale effortlessly."
+  },
+
+  "socialLinks": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/nadeemali001",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://www.github.com/nadeemali001",
+      "icon": "github"
+    },
+    {
+      "name": "Medium",
+      "url": "https://medium.com/@nadeemali001",
+      "icon": "book-open"
+    }
+  ],
+
+  "experience": {
+    "sectionTitle": "Experience",
+    "sectionImage": "appData/Experience.jpg",
+    "items": [
+      {
+        "title": "Site Reliability Engineer / Technical Specialist",
+        "company": "Fidelity International",
+        "period": "Jan 2023 - Present",
+        "description": [
+          "Implemented monitoring, alerting, and automation pipelines to improve reliability for trading systems using Python, Shell, and Airflow.",
+          "Designed observability stack using Grafana, ELK, and AWS CloudWatch, reducing MTTR by 35%.",
+          "Built data ingestion pipelines integrating Charles River Trading data with Snowflake for automated reporting.",
+          "Collaborated with developers and business to define SLIs, SLOs, and error budgets across trading applications."
+        ]
+      },
+      {
+        "title": "DevOps Engineer (Support Engineer III)",
+        "company": "Amazon India",
+        "period": "Mar 2022 - Jan 2023",
+        "description": [
+          "Enhanced production reliability for large-scale eCommerce systems with CI/CD, AWS, and Terraform.",
+          "Automated issue triage and ticket resolution using Python-based self-healing scripts, cutting manual L2 workload by 40%.",
+          "Created build and deployment pipelines using Jenkins and GitHub Actions for internal tools.",
+          "Configured CloudWatch dashboards and alarms for proactive detection of system anomalies."
+        ]
+      },
+      {
+        "title": "Senior Analyst Programmer",
+        "company": "Fidelity International",
+        "period": "Feb 2018 - Mar 2022",
+        "description": [
+          "Managed application reliability and release pipelines for research systems supporting portfolio managers.",
+          "Led early adoption of cloud-native architecture, initiating migration from on-prem to AWS.",
+          "Automated data refresh and testing workflows using Python and Control-M.",
+          "Implemented continuous improvement initiatives using postmortems and RCA analysis."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Deutsche Bank (HCL Tech)",
+        "period": "Dec 2014 - Jan 2018",
+        "description": [
+          "Supported and enhanced trading applications (Imagine DB) with focus on uptime, data integrity, and resilience.",
+          "Optimized incident response processes and automated reporting pipelines using SQL and Shell scripts.",
+          "Collaborated with global SRE and development teams to ensure compliance with reliability SLAs."
+        ]
+      }
+    ]
+  },
+
+  "skills": {
+    "sectionTitle": "Core Skills",
+    "sectionImage": "appData/Skills.jpg",
+    "categories": [
+      {
+        "title": "SRE & Reliability",
+        "icon": "activity",
+        "items": "SLIs/SLOs, Error Budgets, Incident Management, Postmortems, Root Cause Analysis, Reliability Automation"
+      },
+      {
+        "title": "Programming & Automation",
+        "icon": "code",
+        "items": "Python, Shell Scripting, SQL, Data Pipelines, Airflow, Snowflake, Automation Frameworks"
+      },
+      {
+        "title": "DevOps & Infrastructure",
+        "icon": "server",
+        "items": "CI/CD (Jenkins, GitLab CI, GitHub Actions), Docker, Kubernetes, Terraform, CloudFormation, Autosys, Control-M"
+      },
+      {
+        "title": "Monitoring & Observability",
+        "icon": "eye",
+        "items": "Grafana, ELK Stack, AWS CloudWatch, ITRS Geneos, Incident Response Workflows"
+      },
+      {
+        "title": "Cloud Platforms",
+        "icon": "cloud",
+        "items": "AWS (EC2, RDS, IAM, S3), Azure (AKS), GCP (Cloud Run, Monitoring)"
+      }
+    ]
+  },
+
+  "projects": {
+    "sectionTitle": "Highlighted Projects",
+    "items": [
+      {
+        "title": "SRE Data Pipeline Automation",
+        "description": "Developed an automated data pipeline using Python, Airflow, and Snowflake to collect, transform, and visualize reliability metrics (SLIs/SLOs). Improved incident prediction accuracy by 30%."
+      },
+      {
+        "title": "Trading Platform Reliability Improvement",
+        "description": "Implemented monitoring, alerting, and deployment automation for Charles River OMS, ensuring 99.9% uptime. Reduced mean time to detect incidents through ELK and CloudWatch dashboards."
+      },
+      {
+        "title": "CI/CD Standardization Initiative",
+        "description": "Created reusable Terraform and Jenkins modules for multi-environment deployments across applications, reducing release cycle time from 2 days to 4 hours."
+      }
+    ]
+  },
+
+  "education": {
+    "sectionTitle": "Education",
+    "sectionImage": "appData/Education.jpg",
+    "items": [
+      {
+        "title": "B.Tech — Computer Science & Engineering",
+        "period": "2010 - 2014",
+        "description": "Graduated with First Division (69%). Actively led technical events and workshops on programming and automation."
+      }
+    ]
+  },
+
+  "resume": {
+    "sectionTitle": "Download Resume",
+    "files": [
+      {
+        "name": "Download SRE Resume (ATS Friendly)",
+        "file": "appData/Nadeem_Ali_SRE_Resume.pdf"
+      }
+    ]
+  },
+
+  "theme": {
+    "colors": {
+      "primary": "#2563eb",
+      "primaryDark": "#1e40af",
+      "secondary": "#0ea5e9",
+      "accent": "#10b981",
+      "textDark": "#1e293b",
+      "textLight": "#64748b",
+      "bgLight": "#f8fafc",
+      "bgWhite": "#ffffff",
+      "borderColor": "#e2e8f0"
+    },
+    "background": {
+      "type": "gradient",
+      "gradient": {
+        "start": "#f0f4f8",
+        "end": "#d9e4f5",
+        "direction": "135deg"
+      }
+    },
+    "fonts": {
+      "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif",
+      "googleFont": "Inter",
+      "googleFontWeights": "400;500;600;700"
+    },
+    "effects": {
+      "animations": true,
+      "hoverEffects": true,
+      "smoothScroll": true
+    }
+  },
+
+  "meta": {
+    "title": "Nadeem Ali | Site Reliability Engineer",
+    "description": "Nadeem Ali - SRE & DevOps Engineer skilled in reliability, automation, and cloud-native systems. Portfolio showcasing experience, skills, and reliability-focused projects.",
+    "keywords": "Nadeem Ali, Site Reliability Engineer, SRE, DevOps, Cloud, Python, Kubernetes, Automation, CI/CD, Airflow, Snowflake"
+  }
+}

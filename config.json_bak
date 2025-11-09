@@ -1,0 +1,197 @@
+{
+  "personalInfo": {
+    "name": "Nadeem Ali",
+    "title": "Hello! I'm Nadeem Ali",
+    "profileImage": "appData/Nadeem_Ali_2.JPG",
+    "email": "nadeemali001@gmail.com",
+    "summary": "L2 Trading Support — DevOps and AWS — Automation Expert — Python/Shell Scripting/SQL — ITIL Foundation Certified — ITRS Geneos Specialist",
+    "about": "Throughout my life, I've approached every challenge with enthusiasm, creativity, and ceaseless desire to achieve success. This passion and drive have paved the way to countless opportunities, unique experiences and exceptional relationships both personally and professionally. If you're interested in learning more about me, keep reading or get in touch."
+  },
+  "socialLinks": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/nadeemali001",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://www.github.com/nadeemali001",
+      "icon": "github"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/nadeemali001",
+      "icon": "instagram"
+    }
+  ],
+  "experience": {
+    "sectionTitle": "Experience",
+    "sectionImage": "appData/Experience.jpg",
+    "items": [
+      {
+        "title": "Technical Specialist",
+        "company": "Fidelity International",
+        "period": "Jan 2023 - Present",
+        "description": [
+          "Proficient in analysing, managing and integrating Charles River Trading platform, OMS and FIX Protocol.",
+          "Strong project management skills, leading complex Trading system implementation projects on time and within budget and providing technical support.",
+          "Effective communication with traders, portfolio managers, and stakeholders within Trading environment to align system solutions with business objectives"
+        ]
+      },
+      {
+        "title": "Support Engineer III (DevOps Engineer)",
+        "company": "Amazon India",
+        "period": "Mar 2022 - Jan 2023",
+        "description": [
+          "Upgrade system and apps for latest patches using CI/CD pipelines.",
+          "Work on AWS account for various services (IAM, CloudWatch, DynamoDB to name a few).",
+          "Work on multiple issues which needs debug and root cause findings. Also, deploy fixes using Jenkins.",
+          "Work on automations to auto-heal tickets coming from sellers."
+        ]
+      },
+      {
+        "title": "Senior Analyst Programmer",
+        "company": "Fidelity International",
+        "period": "Feb 2018 - Mar 2022",
+        "description": [
+          "Worked in Research System as L2 support and helped analysts to write the research effortlessly on supporting apps.",
+          "Develop, analyse, and refine programs, incorporating workflow charts and client feedback.",
+          "Provide cost advice and design recommendations while testing software patches.",
+          "Worked on initial discussion around migration of in-house applications to Cloud (AWS) and adoption of Dev-Ops."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Deutsche Bank (HCL Tech)",
+        "period": "Dec 2014 - Jan 2018",
+        "description": [
+          "Collaborated with engineers or software developers to select appropriate design solutions or ensure the compatibility of system components.",
+          "Evaluated current or emerging technologies to consider factors such as cost, portability, compatibility, or usability.",
+          "Provided technical guidance or support for the development or troubleshooting of systems."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "sectionTitle": "Skills",
+    "sectionImage": "appData/Skills.jpg",
+    "categories": [
+      {
+        "title": "Tools",
+        "icon": "tool",
+        "items": "Microsoft Power Bi, ITRS Geneos, Control-M, Testing Tools, Putty, SSMS, RPA, Dev-Ops Tools"
+      },
+      {
+        "title": "Languages",
+        "icon": "language",
+        "items": "Shell Scripting, Python, Data Science, C, Power-Shell, SQL, Oracle, HTML, JavaScript, CSS"
+      },
+      {
+        "title": "Applications",
+        "icon": "application",
+        "items": "MoogSoft, Splunk, ELK, New Relic, UrbanDeploy, Service-Now"
+      },
+      {
+        "title": "Cloud Technology",
+        "icon": "cloud",
+        "items": "Amazon Web Services"
+      }
+    ]
+  },
+  "projects": {
+    "sectionTitle": "Projects",
+    "items": [
+      {
+        "title": "Charles River Development Trading",
+        "url": "https://www.crd.com/company/about-us/",
+        "description": "Worked on a Trading platform and help traders to book the trades and provide support to them in case of any issues."
+      },
+      {
+        "title": "Amazon Seller Support",
+        "url": "https://sell.amazon.com/",
+        "description": "Helped sellers to get onboard on the platform and resolves queries while registering."
+      },
+      {
+        "title": "Research Management System",
+        "url": null,
+        "description": "FIL Internal application which is used to help analysts to write research on companies which can help portfolio manager to take buy and sell decision efficiently."
+      },
+      {
+        "title": "Imagine DB",
+        "url": null,
+        "description": "Supported Deutsche Bank internal tools to help trading to book equity trades and register PnL reports."
+      }
+    ]
+  },
+  "education": {
+    "sectionTitle": "Education",
+    "sectionImage": "appData/Education.jpg",
+    "items": [
+      {
+        "title": "Graduation",
+        "period": "July 2010 - June 2014",
+        "description": "Had completed my Graduation with Computer Science and Engg. and scored 69% marks. Also worked as an active member of college event committee to host multiple events and also participate in many as well."
+      },
+      {
+        "title": "Senior Secondary Education",
+        "period": "August 2008 - May 2010",
+        "description": "Had completed my SSE with science stream and scored 65% marks. Had participated in several types of events and competitions."
+      },
+      {
+        "title": "Secondary Education",
+        "period": "Jul 2007 - May 2008",
+        "description": "Had completed my Secondary Education with science stream (English Medium) UP Board and scored highest marks in Maths and Physics in my area."
+      }
+    ]
+  },
+  "resume": {
+    "sectionTitle": "Download Resume",
+    "files": [
+      {
+        "name": "Download ATS Friendly Resume",
+        "file": "appData/Nadeem_ATS_Resume.pdf"
+      },
+      {
+        "name": "Download Advanced Resume",
+        "file": "appData/Nadeem_Resume_2.pdf"
+      }
+    ]
+  },
+  "theme": {
+    "colors": {
+      "primary": "#6366f1",
+      "primaryDark": "#4f46e5",
+      "secondary": "#8b5cf6",
+      "accent": "#06b6d4",
+      "textDark": "#1e293b",
+      "textLight": "#64748b",
+      "bgLight": "#f8fafc",
+      "bgWhite": "#ffffff",
+      "borderColor": "#e2e8f0"
+    },
+    "background": {
+      "type": "gradient",
+      "gradient": {
+        "start": "#f5f7fa",
+        "end": "#c3cfe2",
+        "direction": "135deg"
+      }
+    },
+    "fonts": {
+      "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif",
+      "googleFont": "Inter",
+      "googleFontWeights": "400;500;600;700;800"
+    },
+    "effects": {
+      "animations": true,
+      "hoverEffects": true,
+      "smoothScroll": true
+    }
+  },
+  "meta": {
+    "title": "Nadeem Ali | Portfolio",
+    "description": "Nadeem Ali - L2 Trading Support, DevOps and AWS Expert, Automation Specialist. Portfolio showcasing experience, skills, and projects.",
+    "keywords": "Nadeem Ali, DevOps, AWS, Trading Support, Python, Automation, ITRS Geneos"
+  }
+}
+
