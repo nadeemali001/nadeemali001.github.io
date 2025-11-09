@@ -134,6 +134,16 @@
         "title": "B.Tech — Computer Science & Engineering",
         "period": "2010 - 2014",
         "description": "Graduated with First Division (69%). Actively led technical events and workshops on programming and automation."
+      },
+      {
+        "title": "Senior Secondary Education",
+        "period": "August 2008 - May 2010",
+        "description": "Had completed my SSE with science stream and scored 65% marks. Had participated in several types of events and competitions."
+      },
+      {
+        "title": "Secondary Education",
+        "period": "Jul 2007 - May 2008",
+        "description": "Had completed my Secondary Education with science stream (English Medium) UP Board and scored highest marks in Maths and Physics in my area."
       }
     ]
   },
@@ -143,7 +153,7 @@
     "files": [
       {
         "name": "Download SRE Resume (ATS Friendly)",
-        "file": "appData/Nadeem_Ali_SRE_Resume.pdf"
+        "file": "appData/Nadeem_Ali_SRE_ATS_Sept.pdf"
       }
     ]
   },
