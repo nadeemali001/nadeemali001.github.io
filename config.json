@@ -2,7 +2,7 @@
   "personalInfo": {
     "name": "Nadeem Ali",
     "title": "Site Reliability Engineer | DevOps | Cloud Automation",
-    "profileImage": "appData/images/Nadeem_Ali_2.JPG",
+    "profileImage": "appData/images/Nadeem_Ali.jpg",
     "email": "nadeemali001@gmail.com",
     "summary": "SRE & DevOps Engineer with 10+ years of experience in production reliability, automation, and cloud infrastructure. Skilled in Python, Kubernetes, Airflow, CI/CD, and observability tools with a strong background in trading and large-scale systems.",
     "about": "As an SRE, I focus on building reliable, scalable, and observable systems that automate everything from deployments to incident recovery. I blend my experience in trading platforms and production support with modern reliability practices — SLIs, SLOs, and error budgets — to create resilient services that delight users and scale effortlessly."
