@@ -133,6 +133,7 @@ function renderPortfolio() {
     renderExperience();
     renderSkills();
     renderProjects();
+    renderCertificates();
     renderEducation();
     renderConnect();
     renderResume();
@@ -258,23 +259,27 @@ function renderSkills() {
         `;
     }
     
-    html += '<div>';
+    html += '<div class="skills-content">';
     html += '<h3>My Skills</h3>';
-    html += '<h4>Tricks of the Trade</h4><br>';
+    html += '<h4>Tricks of the Trade</h4>';
     
     if (skills.categories && skills.categories.length > 0) {
+        html += '<div class="skills-categories">';
         skills.categories.forEach(category => {
             if (category.title && category.items) {
                 const iconSvg = getSkillIcon(category.icon);
                 html += `
-                    <h3>
-                        ${iconSvg}
-                        ${category.title}:
-                    </h3>
-                    <p>${category.items}</p><br>
+                    <div class="skill-category">
+                        <h3>
+                            ${iconSvg}
+                            ${category.title}:
+                        </h3>
+                        <p>${category.items}</p>
+                    </div>
                 `;
             }
         });
+        html += '</div>';
     }
     
     html += '</div>';
@@ -282,10 +287,27 @@ function renderSkills() {
     section.innerHTML = html;
 }
 
-// Get skill icon SVG
+// Get skill icon SVG or emoji
 function getSkillIcon(iconType) {
+    // First check for emoji icons
+    const emojiIcons = {
+        activity: '📊',
+        code: '💻',
+        server: '🖥️',
+        eye: '👁️',
+        cloud: '☁️',
+        tool: '🔧',
+        language: '🌐',
+        application: '📱'
+    };
+    
+    if (emojiIcons[iconType]) {
+        return `<span class="skill-icon-emoji">${emojiIcons[iconType]}</span>`;
+    }
+    
+    // Fallback to SVG icons
     const icons = {
-        tool: `<svg viewBox="0.5 15 199 170" xmlns="http://www.w3.org/2000/svg" height="30" width="40">
+        tool: `<svg viewBox="0.5 15 199 170" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
             <path d="M185.3 170.8H14.7c-7.8 0-14.2-6.4-14.2-14.2V29.2C.5 21.4 6.9 15 14.7 15h170.6c7.8 0 14.2 6.4 14.2 14.2v127.5c0 7.8-6.4 14.1-14.2 14.1zM14.7 22.1c-3.9 0-7.1 3.2-7.1 7.1v127.5c0 3.9 3.2 7.1 7.1 7.1h170.6c3.9 0 7.1-3.2 7.1-7.1V29.2c0-3.9-3.2-7.1-7.1-7.1H14.7zM132 181.5c0-2-1.6-3.5-3.6-3.5H71.6c-2 0-3.6 1.6-3.6 3.5 0 2 1.6 3.5 3.6 3.5h56.9c1.9 0 3.5-1.6 3.5-3.5zm49.7-31.9H18.3c-2 0-3.6-1.6-3.6-3.5V32.7c0-2 1.6-3.5 3.6-3.5h163.5c2 0 3.6 1.6 3.6 3.5V146c-.1 2-1.7 3.6-3.7 3.6zm-159.9-7.1h156.4V36.2H21.8v106.3zm106.3-44.7l28.4-21.7c1.6-1.2 1.9-3.4.7-5s-3.4-1.9-5-.7l-28.4 21.7c-1.6 1.2-1.9 3.4-.7 5 .7.9 1.8 1.4 2.8 1.4.8 0 1.6-.2 2.2-.7zm-9.6 4.9c1.3-1.4 1.3-3.7-.2-5-1.4-1.3-3.7-1.3-5 .2-1.2 1.3-5 1.3-8.2-.7-2.4-1.5-6-5-3.3-11.7 2.4-6.3.2-12.7-5.5-15.6-6.1-3.1-15.8-1.6-22.7 9.1-3.2 5-7.2 4.5-9.3 3.8-3.3-1.2-6.6-4.7-6.1-9 .2-1.9-1.2-3.7-3.2-3.9-2-.3-3.7 1.1-4 3-.8 7.1 3.8 14 10.8 16.5 6.7 2.4 13.5-.2 17.6-6.7 4.5-7 10.1-8.3 13.5-6.6 1.9 1 3.5 3.2 2.1 6.7-3.8 9.8.7 16.9 6.2 20.3 2.9 1.8 6.1 2.7 9.1 2.7 3.3.1 6.2-1 8.2-3.1z"></path>
         </svg>`,
         language: `<svg viewBox="0 19.2 200 161.6" xmlns="http://www.w3.org/2000/svg" height="30" width="40">
@@ -339,6 +361,150 @@ function renderProjects() {
     section.innerHTML = html;
 }
 
+// Render certificates section
+function renderCertificates() {
+    const section = document.querySelector('section.certificates');
+    if (!section) return;
+    
+    const certificates = config.certificates;
+    if (!certificates || !certificates.items || certificates.items.length === 0) {
+        section.style.display = 'none';
+        return;
+    }
+    
+    let html = `<h2>${certificates.sectionTitle || 'Certifications'}</h2>`;
+    html += '<div class="certificates-grid">';
+    
+    certificates.items.forEach((cert, index) => {
+        if (!cert.title) return;
+        
+        const hasImage = cert.image || cert.pdf;
+        const fileToShow = cert.image || cert.pdf;
+        // Determine file type: prefer PDF if available, otherwise use image
+        let fileType = 'none';
+        if (cert.pdf) {
+            fileType = 'pdf';
+        } else if (cert.image) {
+            fileType = cert.image.toLowerCase().endsWith('.pdf') ? 'pdf' : 'image';
+        }
+        
+        html += `
+            <div class="certificate-card" data-cert-index="${index}">
+                <div class="certificate-header">
+                    <h3>${cert.title}</h3>
+                    ${cert.issuer ? `<p class="certificate-issuer">${cert.issuer}</p>` : ''}
+                    ${cert.date ? `<p class="certificate-date">${cert.date}</p>` : ''}
+                </div>
+                ${hasImage ? `
+                    <div class="certificate-preview">
+                        <button class="certificate-btn" data-cert-index="${index}" data-file="${fileToShow}" data-type="${fileType}" data-pdf="${cert.pdf || ''}" data-image="${cert.image || ''}">
+                            <span class="certificate-icon">📜</span>
+                            <span>View Certificate</span>
+                        </button>
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    html += '<div id="certificate-modal" class="certificate-modal">';
+    html += '<div class="certificate-modal-content">';
+    html += '<span class="certificate-modal-close">&times;</span>';
+    html += '<div class="certificate-modal-body"></div>';
+    html += '</div>';
+    html += '</div>';
+    
+    section.innerHTML = html;
+    
+    // Add event listeners for certificate modals
+    setupCertificateModals();
+}
+
+// Setup certificate modal functionality
+function setupCertificateModals() {
+    const modal = document.getElementById('certificate-modal');
+    const modalBody = modal.querySelector('.certificate-modal-body');
+    const closeBtn = modal.querySelector('.certificate-modal-close');
+    const certificateBtns = document.querySelectorAll('.certificate-btn');
+    
+    let currentCertIndex = null;
+    
+    // Open modal when certificate is clicked
+    certificateBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const certIndex = btn.getAttribute('data-cert-index');
+            const fileType = btn.getAttribute('data-type');
+            const pdfFile = btn.getAttribute('data-pdf');
+            const imageFile = btn.getAttribute('data-image');
+            
+            // If clicking the same certificate, close it
+            if (currentCertIndex === certIndex && modal.classList.contains('active')) {
+                closeModal();
+                return;
+            }
+            
+            currentCertIndex = certIndex;
+            // Prefer PDF if available, otherwise use image
+            const fileToShow = pdfFile || imageFile;
+            openModal(fileToShow, fileType, pdfFile);
+        });
+    });
+    
+    // Close modal when close button is clicked
+    closeBtn.addEventListener('click', closeModal);
+    
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+    
+    function openModal(file, fileType, pdfFile) {
+        if (!file) return;
+        
+        modalBody.innerHTML = '';
+        
+        if (fileType === 'pdf') {
+            modalBody.innerHTML = `
+                <iframe src="${file}" frameborder="0" style="width: 100%; height: 80vh; border: none; border-radius: 8px;"></iframe>
+                ${pdfFile ? `
+                    <div class="certificate-download">
+                        <a href="${pdfFile}" download class="download-link">📥 Download PDF</a>
+                    </div>
+                ` : ''}
+            `;
+        } else {
+            modalBody.innerHTML = `
+                <img src="${file}" alt="Certificate" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-md);">
+                ${pdfFile ? `
+                    <div class="certificate-download">
+                        <a href="${pdfFile}" download class="download-link">📥 Download PDF</a>
+                    </div>
+                ` : ''}
+            `;
+        }
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+        currentCertIndex = null;
+    }
+}
+
 // Render education section
 function renderEducation() {
     const section = document.querySelector('section.education');
@@ -383,7 +549,7 @@ function renderConnect() {
     const personalInfo = config.personalInfo;
     
     section.innerHTML = `
-        <h2>Connect</h2>
+        <h2>Connect 🤝</h2>
         <p>Feel free to reach out via <a href="mailto:${personalInfo.email}">email</a> for any opportunities or collaborations.</p>
     `;
 }

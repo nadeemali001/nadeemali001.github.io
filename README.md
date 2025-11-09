@@ -19,12 +19,19 @@ A modern, customizable portfolio website that loads all content and styling from
 ├── styles.css          # CSS styling (uses CSS variables)
 ├── script.js           # JavaScript for dynamic rendering
 ├── config.json         # Configuration file (EDIT THIS!)
-└── appData/           # Your images and files
-    ├── Nadeem_Ali_2.JPG
-    ├── Experience.jpg
-    ├── Skills.jpg
-    ├── Education.jpg
-    └── *.pdf (resumes)
+├── config.example.json # Example configuration template
+└── appData/            # All portfolio assets
+    ├── images/         # All portfolio images
+    │   ├── Nadeem_Ali_2.JPG
+    │   ├── Experience.jpg
+    │   ├── Skills.jpg
+    │   └── Education.jpg
+    ├── resumes/        # Resume PDF files
+    │   └── Nadeem_Ali_SRE_ATS_Sept.pdf
+    └── certificates/   # Certificate images and PDFs
+        ├── aws-certificate.jpg
+        ├── aws-certificate.pdf
+        └── ...
 ```
 
 ## 🎨 Customization Guide
@@ -38,7 +45,7 @@ Edit the `personalInfo` section in `config.json`:
   "personalInfo": {
     "name": "Your Name",
     "title": "Hello! I'm Your Name",
-    "profileImage": "appData/your-image.jpg",
+    "profileImage": "appData/images/your-image.jpg",
     "email": "your.email@example.com",
     "summary": "Your professional summary",
     "about": "Your about paragraph"
@@ -75,7 +82,7 @@ Add your work experience:
 {
   "experience": {
     "sectionTitle": "Experience",
-    "sectionImage": "appData/Experience.jpg",
+    "sectionImage": "appData/images/Experience.jpg",
     "items": [
       {
         "title": "Your Job Title",
@@ -94,13 +101,25 @@ Add your work experience:
 
 ### 4. Skills
 
+Customize your skills with emoji icons:
+
+**Available Icon Types:**
+- `activity` 📊 - For metrics/analytics
+- `code` 💻 - For programming languages
+- `server` 🖥️ - For infrastructure/devops
+- `eye` 👁️ - For monitoring/observability
+- `cloud` ☁️ - For cloud platforms
+- `tool` 🔧 - For tools
+- `language` 🌐 - For languages
+- `application` 📱 - For applications
+
 Customize your skills:
 
 ```json
 {
   "skills": {
     "sectionTitle": "Skills",
-    "sectionImage": "appData/Skills.jpg",
+    "sectionImage": "appData/images/Skills.jpg",
     "categories": [
       {
         "title": "Tools",
@@ -151,7 +170,7 @@ Add your education:
 {
   "education": {
     "sectionTitle": "Education",
-    "sectionImage": "appData/Education.jpg",
+    "sectionImage": "appData/images/Education.jpg",
     "items": [
       {
         "title": "Degree Name",
@@ -285,18 +304,53 @@ Add resume download links:
     "files": [
       {
         "name": "Download ATS Friendly Resume",
-        "file": "appData/resume-ats.pdf"
+        "file": "appData/resumes/resume-ats.pdf"
       },
       {
         "name": "Download Advanced Resume",
-        "file": "appData/resume-advanced.pdf"
+        "file": "appData/resumes/resume-advanced.pdf"
       }
     ]
   }
 }
 ```
 
-### 9. Meta Tags (SEO)
+### 9. Certificates
+
+Add your certifications with modal viewing:
+
+```json
+{
+  "certificates": {
+    "sectionTitle": "Certifications 🏆",
+    "items": [
+      {
+        "title": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "date": "2023",
+        "image": "appData/certificates/aws-certificate.jpg",
+        "pdf": "appData/certificates/aws-certificate.pdf"
+      },
+      {
+        "title": "Kubernetes Administrator",
+        "issuer": "CNCF",
+        "date": "2022",
+        "image": "appData/certificates/kubernetes-certificate.jpg",
+        "pdf": null
+      }
+    ]
+  }
+}
+```
+
+**Note**: 
+- You can provide either `image`, `pdf`, or both
+- Clicking on a certificate opens it in a modal
+- Clicking again closes the modal
+- PDFs are displayed in an iframe, images are displayed directly
+- If both are provided, PDF takes priority for display
+
+### 10. Meta Tags (SEO)
 
 Customize SEO meta tags:
 
@@ -313,22 +367,36 @@ Customize SEO meta tags:
 ## 🚀 Getting Started
 
 1. **Clone or Download** this repository
-2. **Edit `config.json`** with your information (or use `config.example.json` as a template)
-3. **Add your images** to the `appData/` folder
-4. **Update image paths** in `config.json` to match your files
-5. **Test locally** by opening `index.html` in a browser
+2. **Create folders** under `appData/`:
+   - `appData/images/` - for all images
+   - `appData/resumes/` - for resume PDFs
+   - `appData/certificates/` - for certificate files
+3. **Add your files** to the appropriate folders:
+   - Images → `appData/images/`
+   - Resumes → `appData/resumes/`
+   - Certificates → `appData/certificates/`
+4. **Edit `config.json`** with your information (or use `config.example.json` as a template)
+5. **Update file paths** in `config.json` to use `appData/` prefix (e.g., `appData/images/photo.jpg`)
+6. **Test locally** by opening `index.html` in a browser
    - **Important**: For local testing, you need a local server (config.json won't load with `file://` protocol)
    - Use: `python -m http.server 8000` or `npx serve` or `php -S localhost:8000`
    - Then open: `http://localhost:8000`
-6. **Deploy to GitHub Pages** or any web hosting service
+7. **Deploy to GitHub Pages** or any web hosting service
 
 ## 📝 Notes
 
-- All images should be placed in the `appData/` folder
-- Update image paths in `config.json` to match your file structure
+### Folder Organization
+- **appData/images/**: All portfolio images (profile, section images, etc.)
+- **appData/resumes/**: Resume PDF files
+- **appData/certificates/**: Certificate images and PDFs
+- All file paths in `config.json` should use `appData/` prefix (e.g., `appData/images/photo.jpg`)
+
+### Important Notes
 - The config.json file must be valid JSON (use a JSON validator if needed)
 - Images should be optimized for web (use tools like TinyPNG)
 - Resume files should be PDF format
+- Certificate files can be JPG/PNG images or PDFs
+- Emojis are supported in section titles and throughout the config
 
 ## 🎨 Color Scheme Ideas
 

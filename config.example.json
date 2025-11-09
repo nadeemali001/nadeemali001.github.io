@@ -2,7 +2,7 @@
   "personalInfo": {
     "name": "Your Name",
     "title": "Hello! I'm Your Name",
-    "profileImage": "appData/your-profile-image.jpg",
+    "profileImage": "appData/images/your-profile-image.jpg",
     "email": "your.email@example.com",
     "summary": "Your professional summary in one line",
     "about": "A longer paragraph about yourself, your background, and your passion."
@@ -27,8 +27,8 @@
   ],
   
   "experience": {
-    "sectionTitle": "Experience",
-    "sectionImage": "appData/experience-image.jpg",
+    "sectionTitle": "Experience 💼",
+    "sectionImage": "appData/images/experience-image.jpg",
     "items": [
       {
         "title": "Job Title",
@@ -44,12 +44,12 @@
   },
   
   "skills": {
-    "sectionTitle": "Skills",
-    "sectionImage": "appData/skills-image.jpg",
+    "sectionTitle": "Core Skills 🚀",
+    "sectionImage": "appData/images/skills-image.jpg",
     "categories": [
       {
         "title": "Programming Languages",
-        "icon": "language",
+        "icon": "code",
         "items": "JavaScript, Python, Java, C++"
       },
       {
@@ -66,7 +66,7 @@
   },
   
   "projects": {
-    "sectionTitle": "Projects",
+    "sectionTitle": "Highlighted Projects 🎯",
     "items": [
       {
         "title": "Project Name",
@@ -80,10 +80,30 @@
       }
     ]
   },
-  
+
+  "certificates": {
+    "sectionTitle": "Certifications 🏆",
+    "items": [
+      {
+        "title": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "date": "2023",
+        "image": "appData/certificates/aws-certificate.jpg",
+        "pdf": "appData/certificates/aws-certificate.pdf"
+      },
+      {
+        "title": "Example Certificate",
+        "issuer": "Issuing Organization",
+        "date": "2022",
+        "image": "appData/certificates/example-certificate.jpg",
+        "pdf": null
+      }
+    ]
+  },
+
   "education": {
-    "sectionTitle": "Education",
-    "sectionImage": "appData/education-image.jpg",
+    "sectionTitle": "Education 📚",
+    "sectionImage": "appData/images/education-image.jpg",
     "items": [
       {
         "title": "Bachelor's Degree",
@@ -94,11 +114,11 @@
   },
   
   "resume": {
-    "sectionTitle": "Download Resume",
+    "sectionTitle": "Download Resume 📄",
     "files": [
       {
         "name": "Download Resume (PDF)",
-        "file": "appData/resume.pdf"
+        "file": "appData/resumes/resume.pdf"
       }
     ]
   },

@@ -2,7 +2,7 @@
   "personalInfo": {
     "name": "Nadeem Ali",
     "title": "Site Reliability Engineer | DevOps | Cloud Automation",
-    "profileImage": "appData/Nadeem_Ali_2.JPG",
+    "profileImage": "appData/images/Nadeem_Ali_2.JPG",
     "email": "nadeemali001@gmail.com",
     "summary": "SRE & DevOps Engineer with 10+ years of experience in production reliability, automation, and cloud infrastructure. Skilled in Python, Kubernetes, Airflow, CI/CD, and observability tools with a strong background in trading and large-scale systems.",
     "about": "As an SRE, I focus on building reliable, scalable, and observable systems that automate everything from deployments to incident recovery. I blend my experience in trading platforms and production support with modern reliability practices — SLIs, SLOs, and error budgets — to create resilient services that delight users and scale effortlessly."
@@ -27,8 +27,8 @@
   ],
 
   "experience": {
-    "sectionTitle": "Experience",
-    "sectionImage": "appData/Experience.jpg",
+    "sectionTitle": "Experience 💼",
+    "sectionImage": "appData/images/Experience.jpg",
     "items": [
       {
         "title": "Site Reliability Engineer / Technical Specialist",
@@ -77,8 +77,8 @@
   },
 
   "skills": {
-    "sectionTitle": "Core Skills",
-    "sectionImage": "appData/Skills.jpg",
+    "sectionTitle": "Core Skills 🚀",
+    "sectionImage": "appData/images/Skills.jpg",
     "categories": [
       {
         "title": "SRE & Reliability",
@@ -109,7 +109,7 @@
   },
 
   "projects": {
-    "sectionTitle": "Highlighted Projects",
+    "sectionTitle": "Highlighted Projects 🎯",
     "items": [
       {
         "title": "SRE Data Pipeline Automation",
@@ -126,9 +126,36 @@
     ]
   },
 
+  "certificates": {
+    "sectionTitle": "Certifications 🏆",
+    "items": [
+      {
+        "title": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "date": "2023",
+        "image": "appData/certificates/aws-certificate.jpg",
+        "pdf": "appData/certificates/aws-certificate.pdf"
+      },
+      {
+        "title": "ITIL Foundation",
+        "issuer": "AXELOS",
+        "date": "2021",
+        "image": "appData/certificates/itil-certificate.jpg",
+        "pdf": null
+      },
+      {
+        "title": "Kubernetes Administrator",
+        "issuer": "CNCF",
+        "date": "2022",
+        "image": "appData/certificates/kubernetes-certificate.jpg",
+        "pdf": "appData/certificates/kubernetes-certificate.pdf"
+      }
+    ]
+  },
+
   "education": {
-    "sectionTitle": "Education",
-    "sectionImage": "appData/Education.jpg",
+    "sectionTitle": "Education 📚",
+    "sectionImage": "appData/images/Education.jpg",
     "items": [
       {
         "title": "B.Tech — Computer Science & Engineering",
@@ -149,11 +176,11 @@
   },
 
   "resume": {
-    "sectionTitle": "Download Resume",
+    "sectionTitle": "Download Resume 📄",
     "files": [
       {
         "name": "Download SRE Resume (ATS Friendly)",
-        "file": "appData/Nadeem_Ali_SRE_ATS_Sept.pdf"
+        "file": "appData/resumes/Nadeem_Ali_SRE_ATS_Sept.pdf"
       }
     ]
   },
