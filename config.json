@@ -130,6 +130,12 @@
       "image": "appData/certificates/Google-Cloud-Fundamentals-Core-Infrastructure.jpg",
       "pdf": null
       },
+      { "title": "Hands-On Essentials: Data Application Builders Workshop",
+      "issuer": "Snowflake",
+      "date": "April 2025",
+      "image": "appData/certificates/Hands-On-Essentials-Data-Application-Builders-Workshop.png",
+      "pdf": null
+      },
       { "title": "Academy Accreditation - Generative AI Fundamentals",
       "issuer": "Databricks Academy",
       "date": "March 2025",
@@ -154,13 +160,6 @@
       "issuer": "Amazon Web Services",
       "date": "November 2024",
       "image": "appData/certificates/AWS-Cloud-Quest-Cloud-Practitioner.jpg",
-      "pdf": null
-      },
-      {
-      "title": "DevOps Beginners to Advanced with Projects",
-      "issuer": "Udemy",
-      "date": "August 2024",
-      "image": "appData/certificates/Devops-Beginners-to-Advanced-with-Projects.jpg",
       "pdf": null
       }
       ]
