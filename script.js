@@ -517,7 +517,7 @@ function renderEducation() {
     
     if (education.sectionImage) {
         html += `
-            <div>
+            <div class="education-image-row">
                 <img src="${education.sectionImage}" alt="Education">
             </div>
         `;

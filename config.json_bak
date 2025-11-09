@@ -1,12 +1,13 @@
 {
   "personalInfo": {
     "name": "Nadeem Ali",
-    "title": "Hello! I'm Nadeem Ali",
-    "profileImage": "appData/Nadeem_Ali_2.JPG",
+    "title": "Site Reliability Engineer | DevOps | Cloud Automation",
+    "profileImage": "appData/images/Nadeem_Ali_2.JPG",
     "email": "nadeemali001@gmail.com",
-    "summary": "L2 Trading Support — DevOps and AWS — Automation Expert — Python/Shell Scripting/SQL — ITIL Foundation Certified — ITRS Geneos Specialist",
-    "about": "Throughout my life, I've approached every challenge with enthusiasm, creativity, and ceaseless desire to achieve success. This passion and drive have paved the way to countless opportunities, unique experiences and exceptional relationships both personally and professionally. If you're interested in learning more about me, keep reading or get in touch."
+    "summary": "SRE & DevOps Engineer with 10+ years of experience in production reliability, automation, and cloud infrastructure. Skilled in Python, Kubernetes, Airflow, CI/CD, and observability tools with a strong background in trading and large-scale systems.",
+    "about": "As an SRE, I focus on building reliable, scalable, and observable systems that automate everything from deployments to incident recovery. I blend my experience in trading platforms and production support with modern reliability practices — SLIs, SLOs, and error budgets — to create resilient services that delight users and scale effortlessly."
   },
+
   "socialLinks": [
     {
       "name": "LinkedIn",
@@ -17,36 +18,33 @@
       "name": "GitHub",
       "url": "https://www.github.com/nadeemali001",
       "icon": "github"
-    },
-    {
-      "name": "Instagram",
-      "url": "https://www.instagram.com/nadeemali001",
-      "icon": "instagram"
     }
   ],
+
   "experience": {
-    "sectionTitle": "Experience",
-    "sectionImage": "appData/Experience.jpg",
+    "sectionTitle": "Experience 💼",
+    "sectionImage": "appData/images/Experience.jpg",
     "items": [
       {
-        "title": "Technical Specialist",
+        "title": "Site Reliability Engineer / Technical Specialist",
         "company": "Fidelity International",
         "period": "Jan 2023 - Present",
         "description": [
-          "Proficient in analysing, managing and integrating Charles River Trading platform, OMS and FIX Protocol.",
-          "Strong project management skills, leading complex Trading system implementation projects on time and within budget and providing technical support.",
-          "Effective communication with traders, portfolio managers, and stakeholders within Trading environment to align system solutions with business objectives"
+          "Implemented monitoring, alerting, and automation pipelines to improve reliability for trading systems using Python, Shell, and Airflow.",
+          "Designed observability stack using Grafana, ELK, and AWS CloudWatch, reducing MTTR by 35%.",
+          "Built data ingestion pipelines integrating Charles River Trading data with Snowflake for automated reporting.",
+          "Collaborated with developers and business to define SLIs, SLOs, and error budgets across trading applications."
         ]
       },
       {
-        "title": "Support Engineer III (DevOps Engineer)",
+        "title": "DevOps Engineer (Support Engineer III)",
         "company": "Amazon India",
         "period": "Mar 2022 - Jan 2023",
         "description": [
-          "Upgrade system and apps for latest patches using CI/CD pipelines.",
-          "Work on AWS account for various services (IAM, CloudWatch, DynamoDB to name a few).",
-          "Work on multiple issues which needs debug and root cause findings. Also, deploy fixes using Jenkins.",
-          "Work on automations to auto-heal tickets coming from sellers."
+          "Enhanced production reliability for large-scale eCommerce systems with CI/CD, AWS, and Terraform.",
+          "Automated issue triage and ticket resolution using Python-based self-healing scripts, cutting manual L2 workload by 40%.",
+          "Created build and deployment pipelines using Jenkins and GitHub Actions for internal tools.",
+          "Configured CloudWatch dashboards and alarms for proactive detection of system anomalies."
         ]
       },
       {
@@ -54,10 +52,10 @@
         "company": "Fidelity International",
         "period": "Feb 2018 - Mar 2022",
         "description": [
-          "Worked in Research System as L2 support and helped analysts to write the research effortlessly on supporting apps.",
-          "Develop, analyse, and refine programs, incorporating workflow charts and client feedback.",
-          "Provide cost advice and design recommendations while testing software patches.",
-          "Worked on initial discussion around migration of in-house applications to Cloud (AWS) and adoption of Dev-Ops."
+          "Managed application reliability and release pipelines for research systems supporting portfolio managers.",
+          "Led early adoption of cloud-native architecture, initiating migration from on-prem to AWS.",
+          "Automated data refresh and testing workflows using Python and Control-M.",
+          "Implemented continuous improvement initiatives using postmortems and RCA analysis."
         ]
       },
       {
@@ -65,72 +63,117 @@
         "company": "Deutsche Bank (HCL Tech)",
         "period": "Dec 2014 - Jan 2018",
         "description": [
-          "Collaborated with engineers or software developers to select appropriate design solutions or ensure the compatibility of system components.",
-          "Evaluated current or emerging technologies to consider factors such as cost, portability, compatibility, or usability.",
-          "Provided technical guidance or support for the development or troubleshooting of systems."
+          "Supported and enhanced trading applications (Imagine DB) with focus on uptime, data integrity, and resilience.",
+          "Optimized incident response processes and automated reporting pipelines using SQL and Shell scripts.",
+          "Collaborated with global SRE and development teams to ensure compliance with reliability SLAs."
         ]
       }
     ]
   },
+
   "skills": {
-    "sectionTitle": "Skills",
-    "sectionImage": "appData/Skills.jpg",
+    "sectionTitle": "Core Skills 🚀",
+    "sectionImage": "appData/images/Skills.jpg",
     "categories": [
       {
-        "title": "Tools",
-        "icon": "tool",
-        "items": "Microsoft Power Bi, ITRS Geneos, Control-M, Testing Tools, Putty, SSMS, RPA, Dev-Ops Tools"
+        "title": "SRE & Reliability",
+        "icon": "activity",
+        "items": "SLIs/SLOs, Error Budgets, Incident Management, Postmortems, Root Cause Analysis, Reliability Automation"
       },
       {
-        "title": "Languages",
-        "icon": "language",
-        "items": "Shell Scripting, Python, Data Science, C, Power-Shell, SQL, Oracle, HTML, JavaScript, CSS"
+        "title": "Programming & Automation",
+        "icon": "code",
+        "items": "Python, Shell Scripting, SQL, Data Pipelines, Airflow, Snowflake, Automation Frameworks"
       },
       {
-        "title": "Applications",
-        "icon": "application",
-        "items": "MoogSoft, Splunk, ELK, New Relic, UrbanDeploy, Service-Now"
+        "title": "DevOps & Infrastructure",
+        "icon": "server",
+        "items": "CI/CD (Jenkins, GitLab CI, GitHub Actions), Docker, Kubernetes, Terraform, CloudFormation, Autosys, Control-M"
       },
       {
-        "title": "Cloud Technology",
+        "title": "Monitoring & Observability",
+        "icon": "eye",
+        "items": "Grafana, ELK Stack, AWS CloudWatch, ITRS Geneos, Incident Response Workflows"
+      },
+      {
+        "title": "Cloud Platforms",
         "icon": "cloud",
-        "items": "Amazon Web Services"
+        "items": "AWS (EC2, RDS, IAM, S3), Azure (AKS), GCP (Cloud Run, Monitoring)"
       }
     ]
   },
+
   "projects": {
-    "sectionTitle": "Projects",
+    "sectionTitle": "Highlighted Projects 🎯",
     "items": [
       {
-        "title": "Charles River Development Trading",
-        "url": "https://www.crd.com/company/about-us/",
-        "description": "Worked on a Trading platform and help traders to book the trades and provide support to them in case of any issues."
+        "title": "SRE Data Pipeline Automation",
+        "description": "Developed an automated data pipeline using Python, Airflow, and Snowflake to collect, transform, and visualize reliability metrics (SLIs/SLOs). Improved incident prediction accuracy by 30%."
       },
       {
-        "title": "Amazon Seller Support",
-        "url": "https://sell.amazon.com/",
-        "description": "Helped sellers to get onboard on the platform and resolves queries while registering."
+        "title": "Trading Platform Reliability Improvement",
+        "description": "Implemented monitoring, alerting, and deployment automation for Charles River OMS, ensuring 99.9% uptime. Reduced mean time to detect incidents through ELK and CloudWatch dashboards."
       },
       {
-        "title": "Research Management System",
-        "url": null,
-        "description": "FIL Internal application which is used to help analysts to write research on companies which can help portfolio manager to take buy and sell decision efficiently."
-      },
-      {
-        "title": "Imagine DB",
-        "url": null,
-        "description": "Supported Deutsche Bank internal tools to help trading to book equity trades and register PnL reports."
+        "title": "CI/CD Standardization Initiative",
+        "description": "Created reusable Terraform and Jenkins modules for multi-environment deployments across applications, reducing release cycle time from 2 days to 4 hours."
       }
     ]
   },
+
+  "certificates": {
+    "sectionTitle": "Certifications 🏆",
+    "items": [
+      { "title": "Google Cloud Fundamentals: Core Infrastructure",
+      "issuer": "Google Cloud Academy",
+      "date": "Oct 2025",
+      "image": "appData/certificates/Google-Cloud-Fundamentals-Core-Infrastructure.jpg",
+      "pdf": null
+      },
+      { "title": "Academy Accreditation - Generative AI Fundamentals",
+      "issuer": "Databricks Academy",
+      "date": "March 2025",
+      "image": "appData/certificates/Academy-Accreditation-Generative-AI-Fundamentals-Full.png",
+      "pdf": null
+      },
+      { "title": "AWS Certified AI Practitioner Early Adopter",
+      "issuer": "Amazon Web Services",
+      "date": "February 2025",
+      "image": "appData/certificates/AWS-Certified-AI-Practitioner-Early-Adopter.png",
+      "pdf": null
+      },
+      {
+      "title": "DevOps Beginners to Advanced with Projects",
+      "issuer": "Udemy",
+      "date": "August 2024",
+      "image": "appData/certificates/Devops-Beginners-to-Advanced-with-Projects.jpg",
+      "pdf": null
+      },
+      {
+      "title": "AWS Cloud Quest: Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "November 2024",
+      "image": "appData/certificates/AWS-Cloud-Quest-Cloud-Practitioner.jpg",
+      "pdf": null
+      },
+      {
+      "title": "DevOps Beginners to Advanced with Projects",
+      "issuer": "Udemy",
+      "date": "August 2024",
+      "image": "appData/certificates/Devops-Beginners-to-Advanced-with-Projects.jpg",
+      "pdf": null
+      }
+      ]
+  },
+
   "education": {
-    "sectionTitle": "Education",
-    "sectionImage": "appData/Education.jpg",
+    "sectionTitle": "Education 📚",
+    "sectionImage": "appData/images/Education.jpg",
     "items": [
       {
-        "title": "Graduation",
-        "period": "July 2010 - June 2014",
-        "description": "Had completed my Graduation with Computer Science and Engg. and scored 69% marks. Also worked as an active member of college event committee to host multiple events and also participate in many as well."
+        "title": "B.Tech — Computer Science & Engineering",
+        "period": "2010 - 2014",
+        "description": "Graduated with First Division (69%). Actively led technical events and workshops on programming and automation."
       },
       {
         "title": "Senior Secondary Education",
@@ -144,25 +187,23 @@
       }
     ]
   },
+
   "resume": {
-    "sectionTitle": "Download Resume",
+    "sectionTitle": "Download Resume 📄",
     "files": [
       {
-        "name": "Download ATS Friendly Resume",
-        "file": "appData/Nadeem_ATS_Resume.pdf"
-      },
-      {
-        "name": "Download Advanced Resume",
-        "file": "appData/Nadeem_Resume_2.pdf"
+        "name": "Download SRE Resume (ATS Friendly)",
+        "file": "appData/resumes/Nadeem_Ali_SRE_ATS_Sept.pdf"
       }
     ]
   },
+
   "theme": {
     "colors": {
-      "primary": "#6366f1",
-      "primaryDark": "#4f46e5",
-      "secondary": "#8b5cf6",
-      "accent": "#06b6d4",
+      "primary": "#2563eb",
+      "primaryDark": "#1e40af",
+      "secondary": "#0ea5e9",
+      "accent": "#10b981",
       "textDark": "#1e293b",
       "textLight": "#64748b",
       "bgLight": "#f8fafc",
@@ -172,15 +213,15 @@
     "background": {
       "type": "gradient",
       "gradient": {
-        "start": "#f5f7fa",
-        "end": "#c3cfe2",
+        "start": "#f0f4f8",
+        "end": "#d9e4f5",
         "direction": "135deg"
       }
     },
     "fonts": {
-      "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif",
+      "primary": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif",
       "googleFont": "Inter",
-      "googleFontWeights": "400;500;600;700;800"
+      "googleFontWeights": "400;500;600;700"
     },
     "effects": {
       "animations": true,
@@ -188,10 +229,10 @@
       "smoothScroll": true
     }
   },
+
   "meta": {
-    "title": "Nadeem Ali | Portfolio",
-    "description": "Nadeem Ali - L2 Trading Support, DevOps and AWS Expert, Automation Specialist. Portfolio showcasing experience, skills, and projects.",
-    "keywords": "Nadeem Ali, DevOps, AWS, Trading Support, Python, Automation, ITRS Geneos"
+    "title": "Nadeem Ali | Site Reliability Engineer",
+    "description": "Nadeem Ali - SRE & DevOps Engineer skilled in reliability, automation, and cloud-native systems. Portfolio showcasing experience, skills, and reliability-focused projects.",
+    "keywords": "Nadeem Ali, Site Reliability Engineer, SRE, DevOps, Cloud, Python, Kubernetes, Automation, CI/CD, Airflow, Snowflake"
   }
 }
-

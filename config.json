@@ -18,11 +18,6 @@
       "name": "GitHub",
       "url": "https://www.github.com/nadeemali001",
       "icon": "github"
-    },
-    {
-      "name": "Medium",
-      "url": "https://medium.com/@nadeemali001",
-      "icon": "book-open"
     }
   ],
 
@@ -129,28 +124,46 @@
   "certificates": {
     "sectionTitle": "Certifications 🏆",
     "items": [
-      {
-        "title": "AWS Certified Solutions Architect",
-        "issuer": "Amazon Web Services",
-        "date": "2023",
-        "image": "appData/certificates/aws-certificate.jpg",
-        "pdf": "appData/certificates/aws-certificate.pdf"
+      { "title": "Google Cloud Fundamentals: Core Infrastructure",
+      "issuer": "Google Cloud Academy",
+      "date": "Oct 2025",
+      "image": "appData/certificates/Google-Cloud-Fundamentals-Core-Infrastructure.jpg",
+      "pdf": null
+      },
+      { "title": "Academy Accreditation - Generative AI Fundamentals",
+      "issuer": "Databricks Academy",
+      "date": "March 2025",
+      "image": "appData/certificates/Academy-Accreditation-Generative-AI-Fundamentals-Full.png",
+      "pdf": null
+      },
+      { "title": "AWS Certified AI Practitioner Early Adopter",
+      "issuer": "Amazon Web Services",
+      "date": "February 2025",
+      "image": "appData/certificates/AWS-Certified-AI-Practitioner-Early-Adopter.png",
+      "pdf": null
       },
       {
-        "title": "ITIL Foundation",
-        "issuer": "AXELOS",
-        "date": "2021",
-        "image": "appData/certificates/itil-certificate.jpg",
-        "pdf": null
+      "title": "DevOps Beginners to Advanced with Projects",
+      "issuer": "Udemy",
+      "date": "August 2024",
+      "image": "appData/certificates/Devops-Beginners-to-Advanced-with-Projects.jpg",
+      "pdf": null
       },
       {
-        "title": "Kubernetes Administrator",
-        "issuer": "CNCF",
-        "date": "2022",
-        "image": "appData/certificates/kubernetes-certificate.jpg",
-        "pdf": "appData/certificates/kubernetes-certificate.pdf"
+      "title": "AWS Cloud Quest: Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "November 2024",
+      "image": "appData/certificates/AWS-Cloud-Quest-Cloud-Practitioner.jpg",
+      "pdf": null
+      },
+      {
+      "title": "DevOps Beginners to Advanced with Projects",
+      "issuer": "Udemy",
+      "date": "August 2024",
+      "image": "appData/certificates/Devops-Beginners-to-Advanced-with-Projects.jpg",
+      "pdf": null
       }
-    ]
+      ]
   },
 
   "education": {
