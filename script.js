@@ -107,8 +107,10 @@ function renderHero() {
     const resumeFile = config.resume?.files?.[0]?.file;
 
     section.innerHTML = `
+        <div class="hero-orb-2" aria-hidden="true"></div>
         <div class="hero-inner">
             <div class="hero-text">
+                <div class="status-badge"><span class="status-dot"></span>Open to Opportunities</div>
                 <p class="hero-greeting">Hello, I'm</p>
                 <h1 class="hero-name">${escHtml(info.name || 'Portfolio')}</h1>
                 <p class="hero-title">${escHtml(info.title || '')}</p>
