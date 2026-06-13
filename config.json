@@ -1,12 +1,20 @@
 {
   "personalInfo": {
     "name": "Nadeem Ali",
-    "title": "Site Reliability Engineer | DevOps | Cloud Automation",
+    "title": "Senior Platform Engineer & SRE | 11+ Years in Mission-Critical Systems",
+    "location": "Noida, India",
     "profileImage": "appData/images/Nadeem_Ali.jpg",
     "email": "nadeemali001@gmail.com",
-    "summary": "SRE & DevOps Engineer with 10+ years of experience in production reliability, automation, and cloud infrastructure. Skilled in Python, Kubernetes, Airflow, CI/CD, and observability tools with a strong background in trading and large-scale systems.",
-    "about": "As an SRE, I focus on building reliable, scalable, and observable systems that automate everything from deployments to incident recovery. I blend my experience in trading platforms and production support with modern reliability practices — SLIs, SLOs, and error budgets — to create resilient services that delight users and scale effortlessly."
+    "summary": "Senior Platform Engineer & SRE with 11+ years of experience building and operating mission-critical systems across financial services, e-commerce, and cloud platforms. Skilled in Python, Kubernetes, Airflow, CI/CD, and observability — with a proven track record of improving reliability and reducing toil at scale.",
+    "about": "I focus on building reliable, scalable, and observable systems — automating everything from deployments to incident recovery. I blend deep experience in trading platforms and large-scale production systems with modern SRE practices (SLIs, SLOs, error budgets) to create resilient services that scale effortlessly and delight users."
   },
+
+  "stats": [
+    { "value": "11+", "label": "Years Experience" },
+    { "value": "4",   "label": "Companies" },
+    { "value": "10+", "label": "Certifications" },
+    { "value": "99.9%","label": "Uptime Target" }
+  ],
 
   "socialLinks": [
     {
@@ -26,7 +34,7 @@
     "sectionImage": "appData/images/Experience.jpg",
     "items": [
       {
-        "title": "Site Reliability Engineer / Technical Specialist",
+        "title": "Senior Platform Engineer / SRE",
         "company": "Fidelity International",
         "period": "Jan 2023 - Present",
         "description": [
@@ -117,6 +125,14 @@
       {
         "title": "CI/CD Standardization Initiative",
         "description": "Created reusable Terraform and Jenkins modules for multi-environment deployments across applications, reducing release cycle time from 2 days to 4 hours."
+      },
+      {
+        "title": "DevTiles — Developer Productivity Platform",
+        "description": "Built a lightweight developer productivity web app with tools for JSON formatting, timezone conversion, and encoding/decoding utilities — designed for everyday developer workflows."
+      },
+      {
+        "title": "Snowflake Weather ETL Pipeline",
+        "description": "Designed and containerized an end-to-end ETL pipeline using Apache Airflow and Snowflake to ingest, transform, and analyze weather data — demonstrating real-world data engineering patterns."
       }
     ]
   },
@@ -160,6 +176,20 @@
       "issuer": "Amazon Web Services",
       "date": "November 2024",
       "image": "appData/certificates/AWS-Cloud-Quest-Cloud-Practitioner.jpg",
+      "pdf": null
+      },
+      {
+      "title": "AI/ML for Geodata Analysis",
+      "issuer": "ISRO (Indian Space Research Organisation)",
+      "date": "September 2024",
+      "image": null,
+      "pdf": null
+      },
+      {
+      "title": "ITIL Foundation Certificate in IT Service Management",
+      "issuer": "AXELOS / PeopleCert",
+      "date": "March 2018",
+      "image": null,
       "pdf": null
       }
       ]
